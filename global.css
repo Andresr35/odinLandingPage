@@ -1,0 +1,36 @@
+:root{
+    --backgroundColor: #1f2937;
+    --firstText:#F9FAF8;
+    --secondText:#E5E7EB;
+    --buttonColor: #3882F6;
+}
+body{
+    margin: 0px;
+}
+.navbar{
+    /* display: flex; */
+    /* width: 100; */
+    background-color: var(--backgroundColor);
+    box-sizing: inherit;
+}
+.navbar h1{
+    color: var(--firstText);
+    font-size: 24px;
+}
+.navbar ul{
+    list-style-type: none;
+    margin-left: 10%;
+}
+.navbar ul li{
+    float: left;
+}
+.navbar ul li:not(:first-child){
+    float: right;
+}
+
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--secondText);
+    font-size: 18px;
+}
