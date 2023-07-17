@@ -1,36 +1,90 @@
-:root{
-    --backgroundColor: #1f2937;
-    --firstText:#F9FAF8;
-    --secondText:#E5E7EB;
-    --buttonColor: #3882F6;
+:root {
+  --backgroundColor: #1f2937;
+  --firstText: #f9faf8;
+  --secondText: #e5e7eb;
+  --buttonColor: #3882f6;
 }
-body{
-    margin: 0px;
+body {
+  margin: 0px;
+  font-family: roboto, sans-serif;
 }
-.navbar{
-    /* display: flex; */
-    /* width: 100; */
-    background-color: var(--backgroundColor);
-    box-sizing: inherit;
+.navbar {
+  display: flex;
+  width: 100%;
+  background-color: var(--backgroundColor);
+  padding-top: 20px;
+  align-items: center;
 }
-.navbar h1{
-    color: var(--firstText);
-    font-size: 24px;
+.navbar h1 {
+  color: var(--firstText);
+  font-size: 24px;
+  margin: 0;
 }
-.navbar ul{
-    list-style-type: none;
-    margin-left: 10%;
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 100%;
 }
-.navbar ul li{
-    float: left;
+.navbar ul li {
+  float: left;
 }
-.navbar ul li:not(:first-child){
-    float: right;
+.links {
+  float: right;
+}
+.links li {
+  margin-right: 20px;
 }
 
-.navbar ul li a{
-    display: block;
-    text-decoration: none;
-    color: var(--secondText);
-    font-size: 18px;
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: var(--secondText);
+  font-size: 18px;
+}
+.firstBanner {
+  background-color: var(--backgroundColor);
+  padding: 120px 10%;
+  display: flex;
+}
+.firstBanner div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 49%;
+  vertical-align: top;
+}
+.firstBanner h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--firstText);
+  margin-bottom: 0;
+}
+.firstBanner p {
+  color: var(--secondText);
+  font-size: 18px;
+  margin-top: 0;
+}
+.firstBanner button {
+  background-color: var(--buttonColor);
+  color: var(--firstText);
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 10px;
+  border: none;
+}
+.img {
+  background-color: rgba(168, 168, 168, 0.493);
+  align-content: center;
+  justify-content: center;
+}
+.secondBanner h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--backgroundColor);
 }
